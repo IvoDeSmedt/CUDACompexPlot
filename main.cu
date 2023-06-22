@@ -153,7 +153,7 @@ int main() {
     float timerSec = ((float)(stop - start)) / CLOCKS_PER_SEC;
     printf("Initialiseren en renderen van de afbeelding duurde %f seconden.\n", timerSec);
 
-    // [GPU -> CPU] de data kopiëren
+    // [GPU -> CPU] de data kopiÃ«ren
     start = clock();
     status = cudaMemcpy(framebuffer, dev_framebuffer, fb_size, cudaMemcpyDeviceToHost);
     if (status != cudaSuccess) {
@@ -162,7 +162,7 @@ int main() {
     }
     stop = clock();
     timerSec = ((float)(stop - start)) / CLOCKS_PER_SEC;
-    printf("Afbeelding van de GPU naar de CPU kopiëren duurde %f seconden.\n", timerSec);
+    printf("Afbeelding van de GPU naar de CPU kopiÃ«ren duurde %f seconden.\n", timerSec);
 
     // [CPU] afbeelding schrijven
     start = clock();
@@ -174,7 +174,7 @@ int main() {
     printf("Afbeelding %s naar PNG schrijven duurde %f seconden.\n", file, timerSec);
 
     // afbeelding weergeven met Windows
-    system("C:/Users/ivods/source/repos/FracCUDA/iter_C.png");
+    system("iter_C.png");
 
 error:
     cudaFree(dev_framebuffer);
