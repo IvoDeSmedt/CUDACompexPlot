@@ -2,7 +2,7 @@
 #ifndef EXPORT_CUH
 #define EXPORT_CUH
 
-#include "stb_image_write.h"
+#include "include/stb_image_write.h"
 
 #define COMP 4
 
